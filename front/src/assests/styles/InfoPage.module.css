@@ -1,0 +1,41 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.content_Container {
+    height: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.LogOut{
+  position: relative;
+  height: 20px;
+  top:-25px;
+}
+
+@media (min-width:800px) {
+    .content_Container_Width {
+        width: 800px;
+    }
+
+    .container_Height {
+        height: 100vh;
+    }
+}
+
+@media (max-width:799px) {
+    .content_Container_Width {
+        width: 270px;
+    }
+
+    .container_Height {
+        min-height: 1200px;
+    }
+}

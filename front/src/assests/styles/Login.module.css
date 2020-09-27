@@ -1,0 +1,107 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #353535;
+    display: flex;
+    align-items: center;
+}
+
+.login_Form {
+    border-radius: 25px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header_Container {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+@media (min-width:510px) {
+    .login_Form_Width {
+        width: 500px;
+    }
+}
+
+@media (max-width:510px) {
+    .login_Form_Width {
+        width: 100%;
+    }
+}
+
+.line {
+    background-color: #c4c4c4;
+    width: 100%;
+    height: 2px;
+    position: relative;
+
+}
+
+.inputs {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-color: #e8e8e8;
+    width: 200px;
+    height: 35px;
+    border-radius: 15px;
+    border: #e8e8e8;
+}
+
+input:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+    font-weight: 200;
+    padding-left: 10px;
+}
+
+button {
+    position: relative;
+    width: 80px;
+    height: 25px;
+    margin-top: 55px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    background-color: #99ccff;
+}
+
+.error_Container {
+    position: absolute;
+    width: 80%;
+    top: 60%;
+    text-align: center;
+}
+
+.error {
+    color: crimson;
+    font-size: 12px;
+}
